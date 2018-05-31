@@ -12,5 +12,5 @@ before_script:
 polymer2:
   stage: build
   script:
-    - docker build -t $CI_REGISTRY_IMAGE:Polymer2:$CI_COMMIT_REF_NAME ./polymer2/
-    - docker push $CI_REGISTRY_IMAGE:Polymer2:$CI_COMMIT_REF_NAME
+    - docker build -t Polymer2:$CI_COMMIT_SHA ./polymer2/
+    - docker push Polymer2:$CI_COMMIT_SHA
