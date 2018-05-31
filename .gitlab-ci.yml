@@ -12,5 +12,5 @@ before_script:
 polymer2:
   stage: build
   script:
-    - docker build -t $CI_REGISTRY_IMAGE:Polymer2-$CI_JOB_ID ./polymer2/
-    - docker push $CI_REGISTRY_IMAGE:Polymer2-$CI_JOB_ID
+    - docker build -t $CI_REGISTRY_IMAGE/Polymer2:$CI_JOB_ID ./polymer2/
+    - docker push $CI_REGISTRY_IMAGE/Polymer2:$CI_JOB_ID
