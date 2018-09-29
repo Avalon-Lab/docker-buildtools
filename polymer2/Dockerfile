@@ -4,6 +4,6 @@ ENV NODE_ENV production
 
 RUN npm install -g npm@latest bower
 
-RUN npm install -g polymer-cli gitlab-letsencrypt --unsafe-perm
+RUN npm install -g polymer-cli Avalon-Lab/gitlab-letsencrypt --unsafe-perm
 
 CMD [ "node" ]
